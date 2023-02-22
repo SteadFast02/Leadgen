@@ -1,0 +1,83 @@
+<!-- select count(*) from leadgeneration.leadgenerationapp_calldetail
+ where  leadstatus="Hot"; -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .threedview{
+      -webkit-box-shadow: 0px 8px 25px -7px rgba(0, 0, 0, 0.96);
+      -moz-box-shadow: 0px 8px 25px -7px rgba(0, 0, 0, 0.96);
+      box-shadow: 0px 8px 25px -7px rgba(0, 0, 0, 0.96);
+    }
+    .callbox{
+        background-color: #b2bec3;
+        width: auto;
+        height: 20vh;
+        margin-left: 10px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .callboxtext{
+        margin-top: 20px;
+        font-size: larger;
+        font-weight: bold;
+        padding: 5px;
+    }
+</style>
+<body style="margin: 0px;">
+    <div class="container">
+        <div style="display: flex; flex-direction: row;">
+            <div style="background-color: #0d181e; width: 30vw; height: 100vh;">
+                <div style="display: flex;
+                justify-content: center;
+                margin-top: 100px;" >
+                    <img src="/static/6155818.jpg" alt="" style="width: 200px;    border-radius: 100px;
+                    " >
+                </div>
+                <div style="margin-top: 50px;
+                color: aliceblue;
+                font-size: 60px;
+                display: flex;
+                justify-content: center;">
+                    Lead Generation
+                </div>
+                <div style="margin-top: 15px;
+                color: aliceblue;
+                display: flex;
+                justify-content: center;">
+                    "Turning prospects into profits with our expert lead generation."
+                </div>
+            </div>
+            <div style="background-color: #ffffff; width: 70vw; height: 100vh;">
+                <div style="display: flex; flex-direction: row;">
+                    <div class="threedview callbox">
+                        <div class="callboxtext">TOTAL HOT CALL {{record.w}}</div>
+                    </div>
+                    <div class="threedview callbox">
+                        <div class="callboxtext">TOTAL WARM CALL</div>
+                    </div>
+                    <div class="threedview callbox">
+                        <div class="callboxtext">TOTAL COLD CALL</div>
+                    </div>
+                    <div class="threedview callbox">
+                        <div class="callboxtext">TOTAL FREEZE CALL</div>
+                    </div>
+                    <div class="threedview callbox">
+                        <div class="callboxtext">TOTAL CONNECTED CALL</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
